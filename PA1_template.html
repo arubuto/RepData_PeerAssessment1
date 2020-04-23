@@ -516,6 +516,9 @@ head(cactData)</code></pre>
 <div id="to-make-a-panel-plot-containing-a-time-series-plot-i.e.-type-l-of-the-5-minute-interval-x-axis-and-the-average-number-of-steps-taken-averaged-across-all-weekday-days-or-weekend-days-y-axis.-a-new-data-for-plotting-us-created." class="section level4">
 <h4>To make a panel plot containing a time series plot (i.e. type = “l”) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). A new data for plotting us created.</h4>
 <pre class="r"><code>AvgInt2 &lt;- aggregate(steps ~ interval + week, cactData, FUN = mean)</code></pre>
+</div>
+<div id="the-plotting-code-is-shown-below" class="section level4">
+<h4>The plotting code is shown below</h4>
 <pre class="r"><code>library(graphics)
 library(lattice)
 xyplot(steps ~ interval | week, AvgInt2, type = &quot;l&quot;, 

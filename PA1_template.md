@@ -199,7 +199,7 @@ hist(cstpd$steps, col = "green", ylim =c(0,35))
 hist(stpd$steps, col = " dark green", ylim =c(0,35))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot for compairing-1.png)<!-- -->
    
    
 
@@ -228,7 +228,7 @@ head(cactData)
 ```r
 AvgInt2 <- aggregate(steps ~ interval + week, cactData, FUN = mean)
 ```
-
+#### The plotting code is shown below
 
 ```r
 library(graphics)
