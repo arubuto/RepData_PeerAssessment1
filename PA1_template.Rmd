@@ -126,7 +126,7 @@ mediandiff <- median2ds - median1ds
 
 #### By compairing the two histograms and adjusting the y-axis to be the same, impact of imputing missing data on the estimates of the total daily number of steps can be observed
 
-```{r}
+```{r plot for compairing}
 par(mfrow = c(1,2))
 hist(cstpd$steps, col = "green", ylim =c(0,35))
 hist(stpd$steps, col = " dark green", ylim =c(0,35))
@@ -147,7 +147,7 @@ head(cactData)
 ```{r plotiing data}
 AvgInt2 <- aggregate(steps ~ interval + week, cactData, FUN = mean)
 ```
-
+#### The plotting code is shown below
 ```{r the plotting}
 library(graphics)
 library(lattice)
