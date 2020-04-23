@@ -60,7 +60,7 @@ hist(stpd$steps, col = "dark green", main = " Histogram of the total number of s
      xlab = "Total No of Steps Each Day")
 ```
 
-![](PA1_template_files/figure-html/Histogram steps per day-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
 
 #### To check the summary amd obtain the mean and median
 
@@ -98,7 +98,7 @@ library(ggplot2)
 ggplot(AvgInt, aes(interval, steps)) + geom_line() +xlab("5-Minutes Intervals") + ylab("Average Steps taken Across All Days")
 ```
 
-![](PA1_template_files/figure-html/Plot 5min int vs avg steps-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
 #### To find the maximum steps on 5-minute intervals:
 
@@ -171,7 +171,7 @@ hist(cstpd$steps, col = "green", main = " Histogram of the total number of steps
      xlab = "Total No of Steps Each Day")
 ```
 
-![](PA1_template_files/figure-html/New Histogram steps per day-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 
 #### To generate the mean and median of the two datasets and finding the difference
@@ -199,7 +199,7 @@ hist(cstpd$steps, col = "green", ylim =c(0,35))
 hist(stpd$steps, col = " dark green", ylim =c(0,35))
 ```
 
-![](PA1_template_files/figure-html/plot for compairing-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
    
    
 
@@ -238,5 +238,5 @@ xyplot(steps ~ interval | week, AvgInt2, type = "l",
        )
 ```
 
-![](PA1_template_files/figure-html/the plotting-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
